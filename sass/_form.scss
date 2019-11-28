@@ -1,0 +1,49 @@
+.sw-form{
+  background: rgba(255,255,255,1);
+  box-shadow: 2px 2px 50px rgba(255, 186, 107, 0.5);
+  width: auto;
+  height: auto;
+  min-width: 500px;
+  padding: 50px 50px;
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  position:absolute;
+  display:none;
+  border-radius:5px;
+  border: 3px solid orange;
+
+  @media screen and (max-width: 766px) {
+    width: 90%;
+    min-width: unset;
+    padding: 5px;
+  }
+
+  &--active{
+    display:block;
+  }
+
+  form {
+    text-align: center;
+
+    label{
+      color:black;
+      margin:5px auto;
+    }
+
+    input{
+      height:30px;
+      border: 1px solid orange;
+      color:black;
+      text-align: center;
+      margin: 5px auto;
+      width:100%;
+    }
+
+    input[type="submit"]{
+      height: unset !important;
+    }
+  }
+}

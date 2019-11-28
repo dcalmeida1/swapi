@@ -1,0 +1,10 @@
+.sw-loader{
+  text-align:center;
+  font-size: 30px;
+  color: orange;
+  display:none;
+
+  &--active{
+    display:block;
+  }
+}

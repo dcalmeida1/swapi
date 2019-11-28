@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/sw-style.css">
+  <script src="./js/index.js" type="module"></script>
+</head>
+
+<body>
+
+  <img src="img/logo.png" height="100">
+  <button class="sw-btn" onclick="showModalForm()">Create a new Character</button>
+  <div class="sw-form">
+      <button class="sw-btn-close" onclick="closeModalForm()">Close</button>
+      <p>Create a new character</p>
+      <div class="sw-form-content">
+        <form name="swForm" onsubmit="return validateForm()">
+          <label for="name">Name:</label>
+          <br>
+          <input id="name" type="text">
+          <br>
+          <label for="birth">Birth year:</label>
+          <br>
+          <input id="birth" type="text">
+          <br>
+          <label for="gender">Gender:</label>
+          <br>
+          <input id="gender" type="text">
+          <br>
+          <label for="eye">Eye Color:</label>
+          <br>
+          <input id="eye" type="text">
+          <br>
+          <label for="hair">Hair Color:</label>
+          <br>
+          <input id="hair" type="text">
+          <br>
+          <input type="submit" class="sw-btn" value="Submit">
+        </form>
+      </div>
+    </div>
+  <div class="sw-wrapper">
+    <p class="sw-loader sw-loader--active">LOADING...</p>
+    <div class="sw-content"></div>
+  </div>
+
+  <script src="./js/form.js"></script>
+
+</body>
+
+</html>

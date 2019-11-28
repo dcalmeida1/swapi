@@ -1,0 +1,40 @@
+.sw-card {
+  display: table;
+  background: rgba(35, 35, 35, 0.8);
+  color: orange;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+
+  @media screen and (max-width: 766px){
+    width: 100%;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  &-title{
+    text-align: right;
+    padding: 10px;
+    font-weight: 100;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+  }
+  
+  &-info{
+    font-weight: 500;
+    padding: 10px;
+    word-break: break-word;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+  }
+}
+

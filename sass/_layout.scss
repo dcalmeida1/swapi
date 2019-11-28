@@ -1,0 +1,35 @@
+@mixin medias($media){
+  $x: 100/12;
+  $newWidth: $x;
+  @for $var from 1 to 13 {
+      .col-#{$media}-#{$var} {
+          width: percentage($newWidth/100);
+          float:left;
+      }
+      $newWidth: $newWidth+$x;
+  }
+}
+
+.row{
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  @include medias('xs');
+}
+
+@media (min-width: 576px) {
+  @include medias('sm');
+}
+
+@media (min-width: 768px) {
+  @include medias('md');
+}
+
+@media (min-width: 992px) {
+  @include medias('lg');
+}
+
+@media (min-width: 1200px) {
+  @include medias('xl');
+}
